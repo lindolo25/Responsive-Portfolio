@@ -1,0 +1,14 @@
+/* Override from Main.css ------------------------------------------------------- */
+
+#main {
+    padding-bottom: 0px;
+}
+
+/* Styles for the page ---------------------------------------------------------- */
+
+#profileImg { 
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin: 6px 20px 20px 0px;
+}

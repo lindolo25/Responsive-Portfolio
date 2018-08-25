@@ -1,0 +1,45 @@
+label, input, textarea { 
+    display: block; 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 12pt;
+    width: 100%;
+}
+
+label {
+    padding: 16px 0px 4px 0px;
+}
+
+label:first-child {
+    padding-top: 0px;
+}
+
+input, textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #dddddd;
+    color: #777777;
+}
+
+input:focus, textarea:focus {
+    border: solid 1px #4aaaa5;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+    color: #adadad;
+}
+
+textarea { height: 200px; }
+
+input[type="submit"] { 
+    background-color: #4aaaa5; 
+    color: white; 
+    margin-top: 16px;
+    width: auto;
+    padding: 10px 20px;
+    border: 0px;
+}
+
+input[type="submit"]:hover { 
+    background-color: #3c8a86;
+}

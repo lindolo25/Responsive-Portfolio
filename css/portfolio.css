@@ -1,0 +1,42 @@
+/* Override from Main.css ------------------------------------------------------- */
+
+#main {
+    padding-bottom: 0px;
+}
+
+h2 {
+   margin-bottom: 10px;
+}
+
+/* Styles for the page ---------------------------------------------------------- */
+
+.portfolioItem {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.portfolioItemPicture, .portfolioItemText {
+    display: block;
+    position: absolute;
+}
+
+.portfolioItemPicture {
+    width: 220px;
+}
+
+.portfolioItemText {
+    background-color: #4aaaa5;
+    color: white;
+    width: 100%;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+    bottom: 10px;
+}
