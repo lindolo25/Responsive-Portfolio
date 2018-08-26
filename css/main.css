@@ -9,9 +9,11 @@ body {
     background-image: url("../images/qbkls.png");
     background-position: left top;
 }
+
 /* this is cool :: this style will override the next one
 div h2 { background-color: green; }
 */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
@@ -80,7 +82,7 @@ nav {
 /* Article Section --------------------------------------------------------------------------------------------- */
 
 article { 
-    padding: 20px;
+    padding: 20px 0px;
     padding-bottom: 90px;
 }
 
@@ -89,6 +91,7 @@ article {
     border: solid 1px #dddddd;
     background-color: white;
     box-sizing: border-box;
+    max-width: 768px;
 }
 
 h2 {
@@ -116,11 +119,23 @@ footer {
 
  /* Media Queries ------------------------------------------------------------------------------------------------- */
 
- @media screen and (max-width: 640px) 
+ @media screen and (max-width: 540px) 
  {
     #logo, nav {
         float: none;
         padding: 20px;
         text-align: center;
+    }
+
+    article { 
+        padding: 20px;
+        padding-bottom: 90px;
+    }
+ }
+
+ @media screen and (min-width: 541px) and (max-width: 980px)
+ {
+    .wrapper {
+        margin: 0 20px;
     }
  }
