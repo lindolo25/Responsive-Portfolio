@@ -69,13 +69,13 @@ nav {
     padding-right: 0px;
 }
 
-ul, li { text-decoration: none; display: inline; }
+.navMenu, .navItem { text-decoration: none; display: inline; }
 
-    li { padding: 0px 10px; border-left: solid 1px #dddddd; }
+    .navItem { padding: 0px 10px; border-left: solid 1px #dddddd; }
 
-    li:first-child { padding-left: 0; border-left: none; }
+    .navItem:first-child { padding-left: 0; border-left: none; }
 
-    li:last-child { padding-right: 0; }
+    .navItem:last-child { padding-right: 0; }
 
 /* Article Section --------------------------------------------------------------------------------------------- */
 
@@ -111,4 +111,16 @@ footer {
     height: 42px;
     margin-top: -70px;
     padding-top: 23px;
+ }
+
+
+ /* Media Queries ------------------------------------------------------------------------------------------------- */
+
+ @media screen and (max-width: 640px) 
+ {
+    #logo, nav {
+        float: none;
+        padding: 20px;
+        text-align: center;
+    }
  }

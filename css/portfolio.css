@@ -2,41 +2,47 @@
 
 #main {
     padding-bottom: 0px;
+    padding-right: 0px;
 }
 
 h2 {
-   margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 /* Styles for the page ---------------------------------------------------------- */
 
 .portfolioItem {
-    position: relative;
     float: left;
-    width: 220px;
-    height: 220px;
+    width: 50%;
     overflow: hidden;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin: 0px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
-.portfolioItemPicture, .portfolioItemText {
-    display: block;
-    position: absolute;
-}
+.portfolioItemRelativeBox { position: relative; }
 
 .portfolioItemPicture {
-    width: 220px;
+    width: 100%;
+    margin-bottom: 18px;
 }
 
 .portfolioItemText {
+    display: block;
+    position: absolute;
     background-color: #4aaaa5;
     color: white;
     width: 100%;
     font-size: 12pt;
     font-weight: bold;
     text-align: center;
-    padding: 10px 0px;
-    bottom: 10px;
+    padding: 15px 0px;
+    bottom: 35px;
 }
+
+ /* Media Queries ------------------------------------------------------------------------------------------------- */
+
+ @media screen and (max-width: 640px) 
+ {
+    .portfolioItem { width: 100%; }
+ }

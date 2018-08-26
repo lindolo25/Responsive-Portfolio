@@ -7,8 +7,20 @@
 /* Styles for the page ---------------------------------------------------------- */
 
 #profileImg { 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     float:left;
     margin: 6px 20px 20px 0px;
 }
+
+ /* Media Queries ------------------------------------------------------------------------------------------------- */
+
+ @media screen and (max-width: 640px) 
+ {
+    #profileImg { 
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0px 0px 20px 0px;
+    }
+ }
