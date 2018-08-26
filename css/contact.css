@@ -22,6 +22,8 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
+    animation-name: inputAnimation;
+    animation-duration: 1s;
     border: solid 1px #4aaaa5;
 }
 
@@ -41,5 +43,26 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover { 
+    animation-name: submitAnimation;
+    animation-duration: 1s;
     background-color: #3c8a86;
+}
+
+input[type="submit"]:focus { 
+    animation-name: submitAnimation;
+    animation-duration: 1s;
+    background-color: #3c8a86;
+    border: 0px;
+}
+
+/* CSS Animations -------------------------------------------------------------------------------------- */
+
+@keyframes submitAnimation {
+    from { background-color: #4aaaa5; }
+    to { background-color: #3c8a86; }
+}
+
+@keyframes inputAnimation {
+    from { border: solid 1px #dddddd; }
+    to { border: solid 1px #4aaaa5; }
 }
